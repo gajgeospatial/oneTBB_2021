@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\oneTBB_2021\msvc\CMakeFiles\a475a1e33703cbea68df365026fa6c1b\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FDFB69DA-3587-3899-B8B2-55210E938DBA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
