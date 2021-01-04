@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -145,19 +145,6 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_debug -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -207,19 +194,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_debug -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -269,19 +243,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_debug -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -331,19 +292,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_release -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -393,19 +341,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_release -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -455,19 +390,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>
-      </Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBINARY_DIR=C:/Development/op3d_active/oneTBB_2021/msvc -DSOURCE_DIR=C:/Development/op3d_active/oneTBB_2021 -DBIN_PATH=C:/Development/op3d_active/oneTBB_2021/msvc/msvc_19.16_cxx_64_md_release -DVARS_TEMPLATE=windows/env/vars.bat.in -DVARS_NAME=vars.bat -DTBB_INSTALL_VARS=OFF -P C:/Development/op3d_active/oneTBB_2021/integration/cmake/generate_vars.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
